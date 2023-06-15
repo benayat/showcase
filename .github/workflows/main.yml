@@ -1,0 +1,26 @@
+# .github/workflows/github-pages.yml
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.4
+
+      - name: Build 🏗️
+        run: |
+          MY_SECRET=${{ secrets.REACT_APP_ACCESS_TOKEN }}
+          # use the secret in some way during build process, e.g., pass it to a script
+          ./build-script.sh $MY_SECRET
+
+      - name: Deploy 🚀
+        uses: peaceiris/actions-gh-pages@v3.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public # or wherever your built site resides
