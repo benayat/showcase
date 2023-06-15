@@ -1,0 +1,49 @@
+/* src/RepoList.module.css */
+
+.repoList {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .repoList h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+  }
+  
+  .repoList .intro {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .repoList a {
+    color: #0366d6;
+  }
+  
+  .repoList a:hover {
+    text-decoration: underline;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #0366d6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #024ea8;
+  }
