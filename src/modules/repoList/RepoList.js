@@ -3,10 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import Repo from '../repo/Repo';
 import styles from './RepoList.module.css';
-// import dotenv from 'dotenv';
 
 const RepoList = () => {
-//   dotenv.config();
   const [repos, setRepos] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const reposPerPage = 5;
@@ -35,7 +33,7 @@ const RepoList = () => {
   return (
     <div className={styles.repoList}>
       <h1>Benaya Trabelsi</h1>
-      <p className={styles.intro}>I'm a backend developer with experience in a variety of technologies including Spring Boot, Python, Go, JavaScript, Docker, Kubernetes, and more. Here are some of my GitHub projects:</p>
+      <p className={styles.intro}>I'm a backend developer with experience in a variety of backend and devops technologies including Spring Boot, spring batch, Python, Go, JavaScript, Docker, Kubernetes, and more. Here are some of my GitHub projects:</p>
       <p><a href="https://docs.google.com/document/d/1l1zTQJjsqzQjdjwy4k1IP6pW1-RYUatT/edit?usp=sharing&ouid=117831390792107525900&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">View my CV</a></p>
       <p><a href="https://www.linkedin.com/in/benaya-trabelsi-11409257/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
       {currentRepos.map(repo => <Repo key={repo.id} repo={repo} />)}
