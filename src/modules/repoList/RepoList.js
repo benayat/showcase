@@ -34,7 +34,7 @@ const RepoList = () => {
     <div className={styles.repoList}>
       <h1>Benaya Trabelsi</h1>
       <p className={styles.intro}>I'm a backend developer with experience in a variety of backend and devops technologies including Spring Boot, spring batch, Python, Go, JavaScript, Docker, Kubernetes, and more. Here are some of my GitHub projects:</p>
-      <p><a href="https://docs.google.com/document/d/1l1zTQJjsqzQjdjwy4k1IP6pW1-RYUatT/uc?export=download&ouid=117831390792107525900&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">View my CV</a></p>
+      <p><a href="https://docs.google.com/document/u/0/export?format=docx&id=1l1zTQJjsqzQjdjwy4k1IP6pW1-RYUatT&token=AC4w5VhVJ8L-QJIRoJtw8FvwL401e7lUyw%3A1687020960535&ouid=117831390792107525900&includes_info_params=true&usp=download&cros_files=false" target="_blank" rel="noopener noreferrer">download my CV</a></p>
       <p><a href="https://www.linkedin.com/in/benaya-trabelsi-11409257/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
       {currentRepos.map(repo => <Repo key={repo.id} repo={repo} />)}
       <div className={styles.pagination}>
