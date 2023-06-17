@@ -7,7 +7,7 @@ import styles from './RepoList.module.css';
 const RepoList = () => {
   const [repos, setRepos] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const reposPerPage = 5;
+  const reposPerPage = 10;
   useEffect(() => {
     console.log(process.env.REACT_APP_ACCESS_TOKEN);
     fetch(`https://api.github.com/user/repos?per_page=100`, {
