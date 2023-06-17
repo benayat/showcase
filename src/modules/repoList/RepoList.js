@@ -10,8 +10,6 @@ const RepoList = () => {
   const [repos, setRepos] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const reposPerPage = 5;
-  console.log(process.env.REACT_APP_ACCESS_TOKEN);
-
   useEffect(() => {
     fetch(`https://api.github.com/user/repos?per_page=100`, {
       headers: {
