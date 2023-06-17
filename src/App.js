@@ -3,7 +3,7 @@
 import './App.css';
 import './App.module.css';
 
-import RepoList from './RepoList';
+import RepoList from './modules/repoList/RepoList';
 
 function App() {
   return (

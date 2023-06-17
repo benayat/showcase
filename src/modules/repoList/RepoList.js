@@ -1,7 +1,7 @@
 // src/RepoList.js
 
 import React, { useEffect, useState } from 'react';
-import Repo from './Repo';
+import Repo from '../repo/Repo';
 import styles from './RepoList.module.css';
 // import dotenv from 'dotenv';
 
