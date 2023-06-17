@@ -17,7 +17,7 @@ const RepoList = () => {
     })
       .then(response => response.json())
       .then(data => {
-        const sortedRepos = data.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
+        const sortedRepos = data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
         setRepos(sortedRepos);
       });
   }, []);
