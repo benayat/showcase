@@ -11,6 +11,7 @@ const RepoList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const reposPerPage = 5;
   useEffect(() => {
+    console.log(process.env.REACT_APP_ACCESS_TOKEN);
     fetch(`https://api.github.com/user/repos?per_page=100`, {
       headers: {
         Authorization: `Bearer ${process.env.REACT_APP_ACCESS_TOKEN}`
