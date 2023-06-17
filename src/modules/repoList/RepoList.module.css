@@ -27,6 +27,7 @@
   
   .repoList a:hover {
     text-decoration: underline;
+    color: #ff6347;
   }
   
   .pagination {
