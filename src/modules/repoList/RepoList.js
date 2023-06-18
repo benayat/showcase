@@ -8,6 +8,7 @@ const RepoList = () => {
   const [repos, setRepos] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalRepos, setTotalRepos] = useState(0);
+  const [error, setError] = useState(null);
   const reposPerPage = 10;
 
   useEffect(() => {
@@ -20,6 +21,8 @@ const RepoList = () => {
       .then(data => {
         console.log(data.length);
         setTotalRepos(data.length);
+      }).catch(error => {
+        setError(error);
       });
   }, []);
 
@@ -33,6 +36,8 @@ const RepoList = () => {
       .then(response => response.json())
       .then(data => {
         setRepos(data);
+      }).catch(error => {
+        setError(error);
       });
   }, [currentPage]);
 
@@ -45,6 +50,7 @@ const RepoList = () => {
   // Change page
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
+  if(error) return <div className={styles.repoList}>Error: {error.message}</div>;
   return (
     <div className={styles.repoList}>
       <h1>Benaya Trabelsi</h1>
