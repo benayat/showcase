@@ -8,7 +8,8 @@ const Repo = ({ repo }) => (
       <h2><a href={repo.html_url} target="_blank" rel="noopener noreferrer">{repo.name}</a></h2>
       <p>{repo.description}</p>
       <p>Language: {repo.language}</p>
-      <p>Stars: {repo.stargazers_count}</p>
+      {repo.stargazers_count>0 && <p>Stars: {repo.stargazers_count}</p>}
+      {repo.watchers_count>0 && <p>Watchers: {repo.watchers_count}</p>}
     </div>
   );
   
