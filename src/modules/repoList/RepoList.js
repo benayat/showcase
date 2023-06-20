@@ -58,16 +58,16 @@ const RepoList = () => {
       <h1>Benaya Trabelsi</h1>
       <p className={styles.intro}>I'm a backend developer with experience in a variety of backend and devops technologies including Spring Boot, spring batch, Python, Go, JavaScript, Docker, Kubernetes, and more. Here are some of my GitHub projects:</p>
       <div className={styles.linksContainer}>
-        <a href="https://medium.com/@benaya7" target="_blank" rel="noopener noreferrer">
+        <a href="https://medium.com/@benaya7" target="_blank" rel="noopener noreferrer" title="Medium Profile">
           <FontAwesomeIcon icon={faMediumM} />
         </a>
-        <a href="https://drive.google.com/uc?export=download&id=1RgIlcZOvL4pk7R8zg019hppL3dhHzcU_" target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/uc?export=download&id=1RgIlcZOvL4pk7R8zg019hppL3dhHzcU_" target="_blank" rel="noopener noreferrer" title='Download my CV'>
             <FontAwesomeIcon icon={faFileDownload} />
         </a>
-        <a href="https://www.linkedin.com/in/benaya-trabelsi-11409257/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/benaya-trabelsi-11409257/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="mailto:benaya7@gmail.com">
+        <a href="mailto:benaya7@gmail.com" title="Email me">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </div>

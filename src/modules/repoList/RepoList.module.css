@@ -60,6 +60,7 @@
   width: 60%;
   margin: auto;
   gap: 1px; /* Adjust this value to increase or decrease the space between the links */
+  padding-bottom: 1rem; /* Add some space below the links */
 }
 .linksContainer a {
   font-size: 5rem;
