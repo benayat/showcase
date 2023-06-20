@@ -61,7 +61,7 @@ const RepoList = () => {
         <a href="https://medium.com/@benaya7" target="_blank" rel="noopener noreferrer" title="Medium Profile">
           <FontAwesomeIcon icon={faMediumM} />
         </a>
-        <a href="https://drive.google.com/uc?export=download&id=1RgIlcZOvL4pk7R8zg019hppL3dhHzcU_" target="_blank" rel="noopener noreferrer" title='Download my CV'>
+        <a href="https://drive.google.com/uc?export=download&id=1-hZO43yHcpxf2AuPr0wllSEZGzUKRiJO" target="_blank" rel="noopener noreferrer" title='Download my CV'>
             <FontAwesomeIcon icon={faFileDownload} />
         </a>
         <a href="https://www.linkedin.com/in/benaya-trabelsi-11409257/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
