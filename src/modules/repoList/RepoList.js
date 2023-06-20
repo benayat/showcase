@@ -1,8 +1,10 @@
 // src/RepoList.js
-
 import React, { useEffect, useState } from 'react';
 import Repo from '../repo/Repo';
 import styles from './RepoList.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faMediumM } from '@fortawesome/free-brands-svg-icons';
 
 const RepoList = () => {
   const [repos, setRepos] = useState([]);
@@ -55,9 +57,20 @@ const RepoList = () => {
     <div className={styles.repoList}>
       <h1>Benaya Trabelsi</h1>
       <p className={styles.intro}>I'm a backend developer with experience in a variety of backend and devops technologies including Spring Boot, spring batch, Python, Go, JavaScript, Docker, Kubernetes, and more. Here are some of my GitHub projects:</p>
-      <p><a href="https://drive.google.com/uc?export=download&id=1RgIlcZOvL4pk7R8zg019hppL3dhHzcU_" target="_blank" rel="noopener noreferrer">Download my CV</a></p>
-      <p><a href="https://www.linkedin.com/in/benaya-trabelsi-11409257/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
-      <p><a href="mailto:benaya7@gmail.com">email me</a></p>
+      <div className={styles.linksContainer}>
+        <a href="https://medium.com/@benaya7" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faMediumM} />
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1RgIlcZOvL4pk7R8zg019hppL3dhHzcU_" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFileDownload} />
+        </a>
+        <a href="https://www.linkedin.com/in/benaya-trabelsi-11409257/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a href="mailto:benaya7@gmail.com">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+      </div>
       {repos.map(repo => <Repo key={repo.id} repo={repo} />)}
       <div className={styles.pagination}>
         {pageNumbers.map(number => (
