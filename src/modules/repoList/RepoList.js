@@ -21,7 +21,7 @@ const RepoList = () => {
     })
       .then(response => response.json())
       .then(data => {
-        console.log(data.length);
+        // console.log(data.length);
         setTotalRepos(data.length);
       }).catch(error => {
         setError(error);
@@ -29,7 +29,7 @@ const RepoList = () => {
   }, []);
 
   useEffect(() => {
-    console.log("current page is: "+currentPage);
+    // console.log("current page is: "+currentPage);
     fetch(`https://api.github.com/user/repos?sort=updated&page=${currentPage}&per_page=${reposPerPage}`, {
       headers: {
         Authorization: `Bearer ${process.env.REACT_APP_ACCESS_TOKEN}`
