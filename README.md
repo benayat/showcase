@@ -3,6 +3,11 @@ Welcome to the Showcase repository! This is a React application designed to show
 
 The application is currently deployed on Netlify and can be accessed at https://benaya-showcase.netlify.app/.
 
+# Features
+- using Github API, I scrape my repos based on some criteria.
+- since GitHub API limits requests on the public/free mode, I used an API key, and let Netlify store it securely.
+- added my medium profile, my latest CV, and email contact.
+
 ## Getting Started
 To get started with this project, clone the repository and install the dependencies:
 ```javascript
