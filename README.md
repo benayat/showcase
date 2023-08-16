@@ -38,3 +38,4 @@ The application is deployed on Netlify. After building the app for production, y
 Contributions are welcome! Please feel free to submit a pull request.
 ## Contact
 If you have any questions or comments, please feel free to contact me on benaya7@gmail.com
+
